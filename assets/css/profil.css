@@ -1,0 +1,200 @@
+/* ======== Visi & Misi Section ======== */
+section .row.g-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* ✅ Biar semua kolom sama tinggi */
+  gap: 2rem; /* jarak antar kolom */
+}
+
+section .row.g-4 > .col-md-5 {
+  display: flex;
+}
+
+/* Card style */
+section .row.g-4 > .col-md-5 > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; /* ✅ Sama tinggi antar kolom */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+section .row.g-4 > .col-md-5 > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Warna dan tema */
+.bg-success.text-white {
+  background-color: #3b7a57 !important;
+  color: #fff !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+  color: #333;
+}
+
+/* Heading dan teks */
+section .row.g-4 > .col-md-5 > div h4 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+section .row.g-4 > .col-md-5 > div p,
+section .row.g-4 > .col-md-5 > div ul {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  section .row.g-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section .row.g-4 > .col-md-5 {
+    width: 100%;
+  }
+
+  section .row.g-4 > .col-md-5 > div {
+    height: auto;
+    padding: 1.5rem;
+  }
+}
+
+/* Struktur Kepemimpinan */
+.org-chart ul {
+  padding-top: 20px;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.org-chart li {
+  text-align: center;
+  position: relative;
+  padding: 20px 5px 0 5px;
+}
+
+/* Garis vertikal dari parent ke child */
+.org-chart li::before, .org-chart li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #198754;
+  width: 50%;
+  height: 20px;
+}
+
+.org-chart li::before {
+  right: 50%;
+}
+
+.org-chart li::after {
+  left: 50%;
+}
+
+/* Hilangkan garis di anak tunggal */
+.org-chart li:only-child::before,
+.org-chart li:only-child::after {
+  display: none;
+}
+
+.org-chart li:only-child {
+  padding-top: 0;
+}
+
+/* Garis vertikal ke bawah */
+.org-chart ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid #198754;
+  height: 20px;
+}
+
+/* Kartu orang */
+.card-org {
+  background: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #198754;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  width: 220px;
+}
+
+.card-org:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card-org img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #198754;
+  margin-bottom: 10px;
+}
+
+.card-org h5, .card-org h6 {
+  font-weight: bold;
+  color: #198754;
+  margin-bottom: 5px;
+}
+
+.card-org p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 0;
+}
+
+/* Kartu level terbawah lebih kecil */
+.card-org.small {
+  width: 180px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .org-chart ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .org-chart li::before,
+  .org-chart li::after,
+  .org-chart ul ul::before {
+    display: none;
+  }
+
+  .card-org {
+    margin-bottom: 30px;
+  }
+}
+
+/* GALLERY */
+.gallery-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+}
+.gallery-grid img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:12px;
+  display:block;
+}

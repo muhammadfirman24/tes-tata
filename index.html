@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <meta name="theme-color" content="#2e7d32">
+  <title>PPTA Tanwirul Furqan</title>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- AOS CSS (jika belum ada) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Global CSS -->
+<link rel="stylesheet" href="assets/css/global.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+<link rel="stylesheet" href="assets/css/profil.css">
+</head>
+<body><!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <img src="assets/img/logoo.png" alt="Logo PPTA" width="50" height="50" class="me-2">
+      <img src="assets/img/logo-2.png" alt="Logo PPTA" width="50" height="50" class="me-2">
+      PPTA Tanwirul Furqan
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Beranda</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="profil.html">Profil</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarAkademik" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Akademik
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarAkademik">
+            <li><a class="dropdown-item" href="#akademik">Program Akademik</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="program.html#paud">PAUD</a></li>
+            <li><a class="dropdown-item" href="program.html#mi">Madrasah Ibtidaiyah (MI)</a></li>
+            <li><a class="dropdown-item" href="program.html#mts">Madrasah Tsanawiyah (MTs)</a></li>
+            <li><a class="dropdown-item" href="program.html#mtq">MTQ</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="galeri.html">Galeri</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="kontak.html">Kontak</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+<!-- Hero Section -->
+<section class="hero-section text-white position-relative overflow-hidden" 
+  style="
+    margin-top: 60px;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('assets/img/background-hero.jpg') center center / cover no-repeat;
+  ">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
+        <h1 class="display-4 fw-bold mb-3">
+          Selamat Datang di Website<br>
+          <span class="text-warning">PPTA Tanwirul Furqan</span>
+        </h1>
+        <p class="lead mb-4">
+          Membentuk Generasi Qurani, Berilmu, dan Berakhlakul Karimah dengan semangat pembelajaran modern dan berkarakter islami.
+        </p>
+        <a href="profil.html" 
+           class="btn btn-light btn-lg shadow-sm rounded-pill px-4 py-2 hover-scale">
+          <i class="bi bi-book-half me-2"></i> Pelajari Lebih Lanjut
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Program akademik-->
+  <section class="py-5 bg-light position-relative" id="program.html">
+  <!-- Ornamen melengkung -->
+  <svg class="position-absolute bottom-0 start-0 w-100" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#f8f9fa" fill-opacity="1"
+          d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,128C672,128,768,160,864,154.7C960,149,1056,107,1152,80C1248,53,1344,43,1392,37.3L1440,32L1440,0L0,0Z"></path>
+  </svg>
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 text-success" data-aos="fade-up">Program Akademik</h2>
+    <p class="text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+      Menyediakan jenjang pendidikan yang membentuk peserta didik beriman, berilmu, dan berakhlak mulia.
+    </p>
+
+    <div class="row g-5">
+      <!-- MI -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <a href="program.html#paud" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100 program-card p-3">
+            <div class="icon-circle bg-success bg-opacity-10 text-success mb-3 mx-auto">
+              <i class="bi bi-book fs-2"></i>
+            </div>
+            <h5 class="fw-semibold">Pendidikan Anak Usia Dini (PAUD)</h5>
+            <p class="text-muted small">
+              Pendidikan usia dini berbasis nilai Islam untuk menumbuhkan karakter dan potensi anak sejak dini.
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- MTs -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <a href="program.html#mi" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100 program-card p-3">
+            <div class="icon-circle bg-success bg-opacity-10 text-success mb-3 mx-auto">
+              <i class="bi bi-journal-text fs-2"></i>
+            </div>
+            <h5 class="fw-semibold">Madrasah Ibtidaiyah (MI)</h5>
+            <p class="text-muted small">
+              Membentuk peserta didik yang beriman, berakhlak mulia, cerdas, dan terampil melalui pembelajaran aktif dan islami.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- PAUD -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <a href="program.html#mts" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100 program-card p-3">
+            <div class="icon-circle bg-success bg-opacity-10 text-success mb-3 mx-auto">
+              <i class="bi bi-brush fs-2"></i>
+            </div>
+            <h5 class="fw-semibold"> Madrasah Tsanawiyah (MTS)</h5>
+            <p class="text-muted small">
+              Mengembangkan keimanan, ketakwaan, serta kemampuan intelektual dan sosial untuk menjadi generasi Qurani yang unggul.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- MTQ -->
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+        <a href="program.html#mtq" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100 program-card p-3">
+            <div class="icon-circle bg-success bg-opacity-10 text-success mb-3 mx-auto">
+              <i class="bi bi-mic fs-2"></i>
+            </div>
+            <h5 class="fw-semibold">Taman pendidikan Qur’an (TPQ)</h5>
+            <p class="text-muted small">
+              Taman Pendidikan Al-Qur’an, tempat anak-anak belajar Al-Qur’an, akhlak, dan ibadah dengan cara menyenangkan.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    <p class="mb-0">© 2025 PPTA Tanwirul Furqan | All Rights Reserved</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+  AOS.init({
+    duration: 1500,  // durasi animasi (dalam milidetik)
+    once: true       // animasi hanya muncul sekali (tidak setiap scroll)
+  });
+</script>
+  <script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+</body>
+</html>
